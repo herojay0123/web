@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Login</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box" id="signupForm">
+            <!-- Sign Up Form -->
+            <form id="registerForm" onsubmit="return validatePassword()">
+                <h2>Sign Up</h2>
+                <input type="number" id="studentId" placeholder="Student ID" min="1000000" max="9999999" minlength="7" maxlength="7" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{11}" minlength="11" maxlength="11" required>
+                <input type="password" id="password" placeholder="Password" required oninput="checkPassword()">
+                <label><input type="checkbox" onclick="togglePassword()"> Show Password</label>
+                
+                <ul class="requirements">
+                    <li id="length" class="invalid">8+ characters</li>
+                    <li id="uppercase" class="invalid">One uppercase letter</li>
+                    <li id="lowercase" class="invalid">One lowercase letter</li>
+                    <li id="number" class="invalid">One number</li>
+                    <li id="special" class="invalid">One special character</li>
+                </ul>
+                
+                <!--for validation-->
+                <button type="button" onclick="validateAndRedirect()">Sign up</button>
+
+                <p><a href="#" onclick="switchForm('loginForm')">Already have an account?</a></p>
+                <p id="error-message" style="color: red;"></p>
+            </form>
+        </div>
+
+        <div class="form-box" id="loginForm" style="display: none;">
+            <!-- Login Form -->
+            <form action="login.html" method="post">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username/Gmail" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <p><a href="#" onclick="switchForm('signupForm')">Don't have an account?</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="account.js"></script>
+    <script>
+    function validateAndRedirect() {
+        // Get the password input value
+        var password = document.getElementById('password').value;
+        
+        // Perform password validation
+        if (validatePassword(password)) {
+            // If password is valid, redirect to main.html
+            window.location.href = 'main.html';
+        } else {
+            // If password is invalid, show an error message
+            alert('Invalid password. Please try again.');
+        }
+    }
+
+    function validatePassword(password) {
+        // Add your password validation logic here
+        // For example, require at least 8 characters, one uppercase, one lowercase, and one number
+        var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        return regex.test(password);
+    }
+    </script>
+</body>
+</html>
