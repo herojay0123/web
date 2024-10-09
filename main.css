@@ -1,0 +1,386 @@
+/* General styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.nav {
+    background-color: #007BFF;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .login-btn, .signup-btn, #darkModeToggle {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .login-btn a, .signup-btn a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.signup-btn {
+    background-color: #ff4757;
+    color: #fff;
+}
+
+.auth-buttons .login-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.signup-btn:hover {
+    background-color: #ff6b81;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #007BFF;
+    text-align: center;
+    padding: 230px 20px;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.frequently-booked {
+    padding: 40px 10px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.frequently-booked h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #007BFF;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 22%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img, .product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-details, .product-card-details {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card-details h4, .product-card-details h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-details p, .product-card-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.rent-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.rent-btn:hover {
+    background-color: #0056b3;
+}
+
+.card:hover, .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background-color: #fff;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.product-list {
+    padding: 40px 10px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.product-list h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #007BFF;
+}
+
+.product-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .card-container, .product-card-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card, .product-card {
+        width: 100%;
+    }
+
+    .category-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+    }
+
+    .banner h2 {
+        font-size: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .frequently-booked, .product-list {
+        padding: 20px;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .nav {
+    background-color: #1a1a40; /* Dark blue navbar */
+    color: #fff;
+}
+
+body.dark-mode .banner {
+    background-color: #1a1a40; /* Dark blue banner */
+    color: #fff;
+}
+
+body.dark-mode .frequently-booked,
+body.dark-mode .categories,
+body.dark-mode .product-list {
+    background-color: #2b2b2b; /* Dark gray sections */
+}
+
+body.dark-mode .card, 
+body.dark-mode .product-card {
+    background-color: #333; /* Dark gray for cards */
+    border: 1px solid #444;
+}
+
+body.dark-mode .rent-btn,
+body.dark-mode .category-btn {
+    background-color: #007BFF; /* Bright buttons in dark mode */
+    color: #fff;
+}
+
+body.dark-mode .footer {
+    background-color: #1a1a40; /* Dark blue footer */
+    color: #e0e0e0;
+}
+body.dark-mode h4,
+body.dark-mode p {
+    color:#e0e0e0
+}

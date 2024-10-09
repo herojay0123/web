@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusRideShare</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="nav">
+        <h1>CampusRideShare</h1>
+        <div class="auth-buttons">
+            <button class="login-btn"><a href="account.html?action=login">Login</a></button>
+            <button class="signup-btn"><a href="account.html?action=signup">Sign Up</a></button>
+            <button id="darkModeToggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>Your Go-To Online Bike Rental Platform in Benguet State University</h2>
+    </section>
+
+    <section class="frequently-booked">
+        <h3>Frequently Booked</h3>
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/Bike3.jpg" alt="Bicycle">
+                <div class="card-details">
+                    <h4>Mountain Bike</h4>
+                    <p>Mountain bike good for off-road and on-road.<br>
+                        For people with a height of  5' and above.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/E-Bike3.jpg" alt="Electric Bicycle">
+                <div class="card-details">
+                    <h4>E-Bike</h4>
+                    <p>E-bike good for on-road.<br>
+                        No pedalling needed.<br>
+                        Best for people with motorcycle background.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Scoot3.jpg" alt="Scooter">
+                <div class="card-details">
+                    <h4>Scooter</h4>
+                    <p>Scooter good for on-road.<br>
+                       Foot  brake.</p><br>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/EScoot1.jpg" alt="Electric Scooter">
+                <div class="card-details">
+                    <h4>E-Scooter</h4>
+                    <p>E-Scooter good for on-road.<br>
+                        Fast.<br>
+                        Strong brake.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category-buttons">
+            <button class="category-btn">All</button>
+            <button class="category-btn">Bicycle</button>
+            <button class="category-btn">Electric Bicycle</button>
+            <button class="category-btn">Scooter</button>
+            <button class="category-btn">Electric Scooter</button>
+        </div>
+    </section>
+
+    <section class="product-list">
+        <h3>Available Rides</h3>
+        <!-- copy paste nalng -->
+        <div class="product-card-container">
+            <div class="product-card" data-category="bicycle">
+                <img src="images/Bike1.jpg" alt="Bicycle">
+                <div class="product-card-details">
+                    <h4>Mountain Bike</h4>
+                    <p>Mountain bike good for off-road and on-road.<br>
+                       For people with a height of  5'5" and above.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bicycle">
+                <img src="images/Bike2.jpg" alt="Bicycle">
+                <div class="product-card-details">
+                    <h4>Mountain Bike</h4>
+                    <p>Mountain bike good for off-road and on-road.<br>
+                        For people with a height of  5'3" and above.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bicycle">
+                <img src="images/Bike3.jpg" alt="Bicycle">
+                <div class="product-card-details">
+                    <h4>Mountain Bike</h4>
+                    <p>Mountain bike good for off-road and on-road.<br>
+                        For people with a height of  5' and above.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bicycle">
+                <img src="images/Bike4.jpg" alt="Bicycle">
+                <div class="product-card-details">
+                    <h4>Mountain Bike</h4>
+                    <p>Best for off-road.<br>
+                       Comfortable ride.<br>
+                       For people with a height of  5' and above.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bicycle">
+                <img src="images/Bike5.jpg" alt="Bicycle">
+                <div class="product-card-details">
+                    <h4>Mountain Bike</h4>
+                    <p>Mountain bike good for off-road and on-road.<br>
+                        For people with a height of  5'5" and above.<br>
+                        Good for exercise.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-bicycle">
+                <img src="images/E-Bike1.jpg" alt="Electric Bicycle">
+                <div class="product-card-details">
+                    <h4>E-Bike</h4>
+                    <p>E-bike good for on-road.<br>
+                        No pedalling needed.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-bicycle">
+                <img src="images/E-Bike2.jpg" alt="Electric Bicycle">
+                <div class="product-card-details">
+                    <h4>E-Bike</h4>
+                    <p>E-bike good for on-road.<br>
+                        With pedals.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="electric-bicycle">
+                <img src="images/E-Bike3.jpg" alt="Electric Bicycle">
+                <div class="product-card-details">
+                    <h4>E-Bike</h4>
+                    <p>E-bike good for on-road.<br>
+                        No pedalling needed.<br>
+                        Best for people with motorcycle background.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-bicycle">
+                <img src="images/E-Bike4.jpg" alt="Electric Bicycle">
+                <div class="product-card-details">
+                    <h4>E-Bike</h4>
+                    <p>E-bike good for on-road.<br>
+                        No pedalling needed.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-bicycle">
+                <img src="images/E-Bike5.jpg" alt="Electric Bicycle">
+                <div class="product-card-details">
+                    <h4>E-Bike</h4>
+                    <p>E-bike good for on-road.<br>
+                        No pedalling needed.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="scooter">
+                <img src="images/Scoot1.jpg" alt="Scooter">
+                <div class="product-card-details">
+                    <h4>Scooter</h4>
+                    <p>Scooter good for on-road.<br>
+                       Foot brake.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="scooter">
+                <img src="images/Scoot2.jpg" alt="Scooter">
+                <div class="product-card-details">
+                    <h4>Scooter</h4>
+                    <p>Scooter good for on-road.<br>
+                       With brake levers, easier braking.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="scooter">
+                <img src="images/Scoot3.jpg" alt="Scooter">
+                <div class="product-card-details">
+                    <h4>Scooter</h4>
+                    <p>Scooter good for on-road.<br>
+                       Foot  brake.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="scooter">
+                <img src="images/Scoot4.jpg" alt="Scooter">
+                <div class="product-card-details">
+                    <h4>Scooter</h4>
+                    <p>Scooter good for on-road.<br>
+                        Foot  brake.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="scooter">
+                <img src="images/Scoot5.jpg" alt="Scooter">
+                <div class="product-card-details">
+                    <h4>Scooter</h4>
+                    <p>Scooter good for on-road.<br>
+                        Foot  brake.</p>
+                    <p>250 Meters: PHP 15, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="electric-scooter">
+                <img src="images/EScoot1.jpg" alt="Electric Scootere">
+                <div class="product-card-details">
+                    <h4>E-Scooter</h4>
+                    <p>E-Scooter good for on-road.<br>
+                        Strong brake.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-scooter">
+                <img src="images/EScoot2.jpg" alt="Electric Scooter">
+                <div class="product-card-details">
+                    <h4>E-Scooter</h4>
+                    <p>E-Scooter good for on-road.<br>
+                        Fast.<br>
+                        Strong brake.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-scooter">
+                <img src="images/EScoot3.jpg" alt="Electric Scooter">
+                <div class="product-card-details">
+                    <h4>E-Scooter</h4>
+                    <p>E-Scooter good for on-road.<br>
+                        Fast.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-scooter">
+                <img src="images/EScoot4.jpg" alt="Electric Scooter">
+                <div class="product-card-details">
+                    <h4>E-Scooter</h4>
+                    <p>E-Scooter good for on-road.<br>
+                        Fast.<br>
+                        With seat for comfort.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electric-scooter">
+                <img src="images/EScoot5.jpg" alt="Electric Scooter">
+                <div class="product-card-details">
+                    <h4>E-Scooter</h4>
+                    <p>E-Scooter good for on-road.<br>
+                        Fast.</p>
+                    <p>250 Meters: PHP 20, 5 per 250 meter</p>
+                    <button class="rent-btn">RENT NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About CampusRideShare</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:herobayani@gmail.com">herobayani@gmail.com</a></p>
+                <p>Phone: +63 123 456 7890</p>
+                <p>Address: Benguet State University, La Trinidad, Benguet, Philippines</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CampusRideShare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
+
